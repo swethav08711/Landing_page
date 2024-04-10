@@ -5,16 +5,23 @@ body {
 a {
   text-decoration: none;
 }
-p{
-    line-height: 1.3;
+p {
+  line-height: 1.3;
 }
+
 /* Header Styles */
+.nav {
+  width: 100%;
+  background: white;
+  position: relative;
+  z-index: 1;
+}
 .header-container {
   display: flex;
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 85%;
 }
 .nav-items {
   display: flex;
@@ -23,6 +30,13 @@ p{
 .nav-items > li {
   padding: 1rem;
   margin: 0 1rem;
+}
+.img-hero {
+  width: 900px;
+  float: right;
+  margin-right: -138px;
+  margin-top: -173px;
+  height: 100%;
 }
 .nav-items > li > a {
   color: gray;
@@ -48,25 +62,25 @@ p{
     hsl(136, 65%, 51%),
     hsl(192, 70%, 51%)
   );
-  font-size: 16px;
 }
 /* Section 1 */
 .hero-container {
   background-color: hsl(0, 0%, 98%);
+  height: 550px;
 }
 .hero-section {
-  width: 90%;
+  width: 85%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: -550px;
 }
 .hero-content {
-  width: 70%;
   text-align: left;
-
   margin: 0px;
 }
 .hero-content > h1 {
@@ -87,7 +101,7 @@ p{
   background-color: hsl(220, 16%, 96%);
 }
 .easy-bank-container {
-  width: 90%;
+  width: 85%;
   margin: auto;
   padding: 4rem 0px;
 }
@@ -107,4 +121,91 @@ p{
   display: flex;
   gap: 5rem;
   margin: 4rem 0;
+}
+.latest-container {
+  background-color: hsl(0, 0%, 98%);
+}
+.article-card-container {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+.latest-article-image {
+  height: 200px;
+}
+.latest-article-image > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px 3px 0 0;
+}
+.latest-article {
+  background-color: white;
+  border-bottom: 3px;
+}
+.latest-article-content {
+  padding: 1rem;
+}
+.latest-article-content > small {
+  color: gray;
+}
+.latest-article-content > p {
+  color: gray;
+}
+.footer-container {
+  background-color: hsl(233, 26%, 24%);
+}
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.footer-icons > img {
+  width: 100%;
+  background-color: white;
+}
+.social-icon {
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+}
+.footer-links-container {
+  width: 30%;
+}
+.social-icon > img {
+  width: 18px;
+}
+.fotter-child-container {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.footer-links {
+  display: flex;
+
+  justify-content: space-evenly;
+  color: white;
+}
+.footer-links-p > p:hover {
+  color: teal;
+}
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer-button > button {
+  width: 80%;
+}
+.footer-button > small {
+  letter-spacing: 1px;
+  color: grey;
 }
